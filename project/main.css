@@ -1,0 +1,129 @@
+/* EXERCISE 2
+
+body {
+  background: url(http://68.media.tumblr.com/de048c2d049429d429051aa7ab7ddce1/tumblr_o96nr94YTQ1qd9dz2o1_1280.jpg)
+}
+
+h1 {
+  font-family: 'Josefin Slab', serif;
+  text-align: center;
+  color: #8BC34A;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.work-container {
+  text-align: center;
+  width: 80%;
+  margin: 5% 10%;
+  border-color: #8BC34A;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);  
+  color: white;
+}
+
+#work-2 {
+  font-family: 'Anton', sans-serif;
+  border-style: solid;
+}
+
+#work-1 {
+  font-family: 'Josefin Slab', serif;
+  border-style: dotted;
+}
+
+#work-3 {
+  font-family: 'Raleway', sans-serif;
+  border-style: double;
+  border-width: 10px;
+}
+
+header {
+  color: white;
+}
+
+header > * {
+  margin: 0;
+}
+
+*/
+
+
+body {
+  background: url(http://68.media.tumblr.com/de048c2d049429d429051aa7ab7ddce1/tumblr_o96nr94YTQ1qd9dz2o1_1280.jpg);
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Josefin Slab', serif;
+  text-align: center;
+  color: #8BC34A;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.work-container {
+  text-align: center;
+  width: 80%;
+  margin: 5% 10%;
+  border-color: #8BC34A;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);  
+  color: white;
+}
+
+#work-2 {
+  font-family: 'Anton', sans-serif;
+  border-style: solid;
+}
+
+#work-1 {
+  font-family: 'Josefin Slab', serif;
+  border-style: dotted;
+}
+
+#work-3 {
+  font-family: 'Raleway', sans-serif;
+  border-style: double;
+  border-width: 10px;
+}
+
+header {
+  color: white;
+}
+
+header > * {
+  margin: 0;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: #8BC34A;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 30%;
+  margin: 0;
+}
+
+nav > ul > li {
+  padding: 5%;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > ul > li:hover {
+  background-color: black;
+  color: white; 
+}
+
