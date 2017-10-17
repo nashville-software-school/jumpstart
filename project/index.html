@@ -1,22 +1,22 @@
 
-      
+
 <!-- EXERCISE 1 -->
-<!-- 
+<!--
   - A page header containing the blog's title
   - A page footer containing the copyright notice (view pretty much any web site to see an example)
   - Each article has a header containing a title
   - Each article has a footer containing the author and publication date
-  - Each article has at least one section 
+  - Each article has at least one section
 -->
 
-      
+
 <!-- <html>
   <head>
     <meta charset="utf-8">
     <title>Buster's Personal Bio Site</title>
   </head>
   <body>
-    
+
     <h1>Buster's Blog</h1>
     <article class="blog-entry">
       <header>
@@ -29,7 +29,7 @@
         <p>Author: Byron "Buster" Bluth || Publication Date: <time datetime="2017-05-15T19:00">May 15th, 2017</time></p>
       </footer>
     </article>
-    
+
     <article class="blog-entry">
       <header>
         <h3>I Think I've Got A <em>Hand</em>le On This</h3>
@@ -41,7 +41,7 @@
         <p>Author: Byron "Buster" Bluth || Publication Date: <time datetime="2017-06-21T19:00">June 21st, 2017</time></p>
       </footer>
     </article>
-    
+
     <article class="blog-entry">
       <header>
         <h3>I Sealed the Deal</h3>
@@ -53,18 +53,18 @@
         <p>Author: Byron "Buster" Bluth || Publication Date: <time datetime="2017-10-05T19:00">October 5th, 2017</time></p>
       </footer>
     </article>
-    
+
   </body>
 </html> -->
 
 
 <!-- EXERCISE 2 -->
-<!-- 
+<!--
   - Each place you've worked must be contained in an article element
   - Each article element should have a header that contains the name of the company and the dates of your employment. BONUS: Ensure that the dates are semantically marked by being contained within the appropriate HTML element.
   - Each article should have it's own id.
   - Each article should contain at least one section that describes your position there.
-  
+
   STYLING
   - Each article should use a different font family.
   - All article headings should be the same font color(NO BLACK!!!).
@@ -81,8 +81,8 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    
-      
+
+
     <h1>Buster's Work History</h1>
       <article id="work-1" class="work-container">
         <header>
@@ -94,7 +94,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
       </article>
-      
+
       <article id="work-2" class="work-container">
         <header>
           <h3>Soldier</h3>
@@ -105,7 +105,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
       </article>
-      
+
       <article id="work-3" class="work-container">
         <header>
           <h3>Construction Worker</h3>
@@ -116,17 +116,19 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
       </article>
-    
+
   </body>
 </html> -->
 
 <!-- EXERCISE 3 -->
-<!-- 
+<!--
   - Add a contact me form with at least 3 fields(ex: name, email, message), validation for the fields and a button.
   - A navigation bar with a header(text or logo) and at least 3 links(you can just have the links direct to other sites like Wikipedia)
   - Show your top 5 favorite movies/books/tv shows using flex box. There should be an image and title for each one. For example:
 -->
-<!DOCTYPE html>
+
+
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -143,8 +145,9 @@
         <li><a href="http://arresteddevelopment.wikia.com/wiki/Buster_Bluth#Trivia">Trivia</a></li>
       </ul>
     </nav>
-      
-    <h1>Buster's Work History</h1>
+
+    <div id="work-container">
+      <h1>Buster's Work History</h1>
       <article id="work-1" class="work-container">
         <header>
           <h3>Graduate Student</h3>
@@ -155,7 +158,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
       </article>
-      
+
       <article id="work-2" class="work-container">
         <header>
           <h3>Soldier</h3>
@@ -166,7 +169,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
       </article>
-      
+
       <article id="work-3" class="work-container">
         <header>
           <h3>Construction Worker</h3>
@@ -177,6 +180,301 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
       </article>
-    
+    </div>
+
+
+
+    <div id="contact-me">
+      <h1>Busta Move</h1>
+      <form name="contact-me" method="post" action="#">
+        <input type="text" name="first_name" placeholder="NAME" required>
+        <input  type="email" name="email" placeholder="MAIL" required>
+        <textarea name="comments" placeholder="MESSAGE" required ></textarea>
+        <button name="send" type="submit" class="submit">SEND</button>
+      </form>
+    </div>
+
+    <div id="favorite-things">
+      <h1>Buster's Best-Loved</h1>
+      <div id="card-container">
+        <div class="card">
+          <div class="image-container">
+            <img src="http://www.estately.com/blog/assets/tumblr_mi38zgests1qbuchfo1_400.jpg" alt="">
+          </div>
+          <div class="description-container">
+            <h3>Lucille 2</h3>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image-container">
+            <img src="https://media.thetab.com/blogs.dir/187/files/2017/03/tumblr-mnbklayk0u1rodz1bo1-1280-1024x576.jpg" alt="">
+          </div>
+          <div class="description-container">
+            <h3>Motherboy</h3>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image-container">
+            <img src="https://img.huffingtonpost.com/asset/570414551500002a000b41a5.jpeg" alt="">
+          </div>
+          <div class="description-container">
+            <h3>Juice</h3>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image-container">
+            <img src="https://vignette2.wikia.nocookie.net/arresteddevelopment/images/2/27/1x11_Public_Relations_%2827%29.png/revision/latest/scale-to-width-down/670?cb=20120408205114" alt="">
+          </div>
+          <div class="description-container">
+            <h3>School</h3>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image-container">
+            <img src="https://vignette4.wikia.nocookie.net/arresteddevelopment/images/8/88/S4_Lucille_%2801%29.jpg/revision/latest/scale-to-width-down/670?cb=20130502032638" alt="">
+          </div>
+          <div class="description-container">
+            <h3>Mother</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+</html> -->
+
+
+
+<!-- EXERCISE 4 PART 1 -->
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Buster's Blog</h1>
+
+
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title">My Adventure Into Coding</h3>
+        </div>
+        <div class="panel-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="panel-footer">Author: Byron "Buster" Bluth || Publication Date: <time datetime="2017-05-15T19:00">May 15th, 2017</time></div>
+      </div>
+
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title">I Think I've Got A <em>Hand</em>le On This</h3>
+        </div>
+        <div class="panel-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="panel-footer">Author: Byron "Buster" Bluth || Publication Date: <time datetime="2017-06-21T19:00">June 21st, 2017</time></div>
+      </div>
+
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title">I Sealed the Deal</h3>
+        </div>
+        <div class="panel-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="panel-footer">Author: Byron "Buster" Bluth || Publication Date: <time datetime="2017-10-05T19:00">October 5th, 2017</time></div>
+      </div>
+    </div>
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html> -->
+
+
+<!-- EXERCISE 4: PART 2 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Buster's Work History</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Josefin+Slab|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Motherboy</a>
+        </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="https://twitter.com/mrtonyhale?lang=en">Twitter</a></li>
+          <li><a href="http://arresteddevelopment.wikia.com/wiki/The_One_Where_They_Build_a_House">Blog</a></li>
+          <li><a href="http://arresteddevelopment.wikia.com/wiki/Buster_Bluth#Trivia">Trivia</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!-- <div class="container">
+    <div class="row">
+      <div id="work-container" class="col-sm-8">
+        <h1>Buster's Work History</h1>
+        <article id="work-1" class="work-container">
+          <header>
+            <h3>Graduate Student</h3>
+            <h5>Milford School</h5>
+            <span><time datetime="2003">2003</time> - <time datetime="2017">Current</time></span>
+          </header>
+          <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </article>
+
+        <article id="work-2" class="work-container">
+          <header>
+            <h3>Soldier</h3>
+            <h5>Army</h5>
+            <span><time datetime="2004">2004</time> - <time datetime="2004">2004</time></span>
+          </header>
+          <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </article>
+
+        <article id="work-3" class="work-container">
+          <header>
+            <h3>Construction Worker</h3>
+            <h5>Bluth Company</h5>
+            <span><time datetime="2003">2004</time> - <time datetime="2017">Current</time></span>
+          </header>
+          <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+        </article>
+      </div>
+
+      <div id="contact-me" class="col-sm-4">
+        <h1>Busta Move</h1>
+        <form name="contact-me">
+          <input type="text" name="first_name" placeholder="NAME" required id="form-name">
+          <input  type="email" name="email" placeholder="MAIL" required id="form-email">
+          <textarea name="comments" placeholder="MESSAGE" required id="form-comments"></textarea>
+          <p id="message-output" class="message-output"></p>
+          <button name="send" class="submit" id="form-submit">SEND</button>
+        </form>
+      </div>
+
+    </div>
+
+
+
+
+
+      <div id="favorite-things">
+        <h1>Buster's Best-Loved</h1>
+        <div id="card-container">
+          <div class="card">
+            <div class="image-container">
+              <img src="http://www.estately.com/blog/assets/tumblr_mi38zgests1qbuchfo1_400.jpg" alt="">
+            </div>
+            <div class="description-container">
+              <h3>Lucille 2</h3>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-container">
+              <img src="https://media.thetab.com/blogs.dir/187/files/2017/03/tumblr-mnbklayk0u1rodz1bo1-1280-1024x576.jpg" alt="">
+            </div>
+            <div class="description-container">
+              <h3>Motherboy</h3>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-container">
+              <img src="https://img.huffingtonpost.com/asset/570414551500002a000b41a5.jpeg" alt="">
+            </div>
+            <div class="description-container">
+              <h3>Juice</h3>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-container">
+              <img src="https://vignette2.wikia.nocookie.net/arresteddevelopment/images/2/27/1x11_Public_Relations_%2827%29.png/revision/latest/scale-to-width-down/670?cb=20120408205114" alt="">
+            </div>
+            <div class="description-container">
+              <h3>School</h3>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image-container">
+              <img src="https://vignette4.wikia.nocookie.net/arresteddevelopment/images/8/88/S4_Lucille_%2801%29.jpg/revision/latest/scale-to-width-down/670?cb=20130502032638" alt="">
+            </div>
+            <div class="description-container">
+              <h3>Mother</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button name="send" class="submit">See My Work History (In the console).</button>
+      </div> -->
+
+      <div id="places-holder">
+        <form id="search-places">
+          <label for="search-field">Search my places:<input type="text" id="search-field" name="search-field" placeholder="Search..."></label>
+          <div id="radio-buttons">
+            <label for="been">Places I've Been.  <input type="radio" name="been-there" value="true" id="been"></label>
+            <label for="been">Places I Want to Go.  <input type="radio" name="been-there" value="false" id="havent-been"></label>
+          </div>
+          <button type="submit" name="button" class="submit">Show Me!</button>
+        </form>
+
+        <div id="place-card-holder">
+
+        </div>
+      </div>
+  </div>
+
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
