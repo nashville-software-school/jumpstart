@@ -1,49 +1,82 @@
 <html>
   <head>
-    <meta charset="utf-8">
-    <title> Bluth Banana Stand </title>
-    <!--   1. LINK A GOOGLE FONT TO YOUR PROJECT (https://fonts.google.com/)  -->
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
   </head>
   <body>
-    <!--   2. GIVE THIS H1 TAG THE FOLLOWING  SYLING FEATURES: Your selected Google Font, A fun color, Centered  -->
-    <h1> There's Always Money in the Banana Stand</h1>
-
-
-   <img src="https://vignette2.wikia.nocookie.net/arresteddevelopment/images/6/67/1x05_Charity_Drive_%2810%29.png">
-
-
-    <!--   3. GIVE ALL THE CONTAINERS A BLACK BORDER (STYLE OF THE BORDER IS UP TO YOU).  -->
-    <!--   4. GIVE EACH DIFFERENT DIV A DIFFERENT BACKGROUND COLOR.  -->
-    <div class="container" id="company-values">
-      <h3>Company Values</h3>
-      <ul>
-        <li>Always money</li>
-        <li>No slacking off</li>
-        <li>No stealing bananas</li>
-      </ul>
+    <!--  DIRECTION 1: Float this class LEFT. It should have a width of 40% of the     screen. Write a CSS rule that floats this entire div to the left of the page.   -->
+    <!--  DIRECTION 3: Each image that is a descendant of the "float-me-left" class should only take up 50% of its parent container. Write a CSS rule that applies to these images and changes their width.    -->
+    <div class="float-me-left">
+      <h1>This is a fabulous romper.</h1>
+      <img src="http://www.partybritain.com/images/SM28601_b.jpg" alt="Romper" />
+      <h1>This is an okay door.</h1>
+      <img src="https://s-media-cache-ak0.pinimg.com/originals/4d/e4/4f/4de44f22ab910ce003b9a6bc6015f5fc.jpg" alt="Door" />
     </div>
 
-    <div class="container" id="about-company">
-      <h3>About Our Company</h3>
-      <p>I know, I just call her Annabelle cause she's shaped like a…she's the belle of the ball! Wow, this is the best free scrapbooking class I've ever taken! ps This one really cracks me up for some reason. What is she doing at a beauty pageant? Is she running the lights or something?</p>
-      <p>She's trying to prove that she's closer to my children than I am, but the joke's on her, because she doesn't know how little I care for GOB. Get rid of the Seaward. Lucille: I'll leave when I'm good and ready. I know, I just call her Annabelle cause she's shaped like a…she's the belle of the ball! He… she… what's the difference? Oh hear, hear. In the dark, it all looks the same. Early. Are all the guys in here… you know? George Sr: No not all of them. Barry: Yeah. It's never the ones you hope. Oh, yeah, the $4,000 suit is holding the elevator for a guy who doesn't make that in 3 months. Come on! You stay on top of her, Buddy. Don't be afraid to ride her. Hard.</p>
-      <p>There's a girl in my soup! No borders, no limits… go ahead, touch the Cornballer… you know best? You're a good guy, mon frere. That means brother in French. I don't know how I know that. I took four years of Spanish. Here he comes. Here comes John Wayne. "Circumvent." It means "to go around." Gob: The old "reach around."</p>
+   <!--  DIRECTION 2: Float this class RIGHT. It should have a width of 40% of the screen. Write a CSS rule that floats this entire div to the right of the page.   -->
+    <!--  DIRECTION 4: Each image that is a descendant of the "float-me-right" class should only take up 50% of its parent container. Write a CSS rule that applies to these images and changes their width.    -->
+    <div class="float-me-right">
+      <h1>This is a fabulous romper.</h1>
+      <img src="http://www.partybritain.com/images/SM28601_b.jpg" alt="Romper" />
+      <h1>This is an okay door.</h1>
+      <img src="https://s-media-cache-ak0.pinimg.com/originals/4d/e4/4f/4de44f22ab910ce003b9a6bc6015f5fc.jpg" alt="Door" />
     </div>
 
-    <!--  5. GIVE THE H3 ELEMENT IN THIS DIV (AND THIS DIV ONLY) GREEN TEXT COLOR   -->
-    <div class="container" id="contact-us">
-      <h3>Contact Us</h3>
-      <form action="#">
-        <label for="contact-name">Name</label>
-        <input type="text" name="contact-name" required/>
+    <!--  DIRECTION 5: Uh-oh! You might have noticed an error in the formatting of your page. "Hello" shouldn't be up in the top middle! Write a rule that applies to the "clearfix" class that fixes this problem.  -->
+    <div class="clearfix" id=""></div>
+    <h2>Hello</h2>
 
-        <label for="contact-email">Email</label>
-        <input type="email" name="contact-email" required/>
 
-        <label for="contact-memo">Memo</label>
-        <textarea name="contact-memo" rows="10"></textarea>
-      </form>
+    <!--  DIRECTION 6: All H1s that are a descendant class "main-container" should be font-family: 'Luckiest Guy', cursive; (the link for this google font has already been included in the head.) -->
+    <!--  DIRECTION 7: All H1s that are DIRECT children (only) of the "main-container" class should have a font color of blue.  -->
+    <!--  DIRECTION 8: The "main-container" class should be a width of 80% of the screen. It should have a background color of "goldenrod." It should have a 5px border (style and color of your choosing). It should be centered on the screen using margin. It should have 30px of padding between the child elements and the border. (Note: don't overcomplicate that last one. You should use the CSS property padding on the "main-container" element, just giving you the technical terminology for what is happening.) -->
+
+    <div class="main-container">
+      <h1>I'm a child!</h1>
+
+      <article>
+        <section>
+          <h1>I'm a great great grandchild!</h1>
+          <img src="https://image.freepik.com/free-vector/family-tree_23-2147512823.jpg" alt="Family Tree" width="100px"/>
+        </section>
+      </article>
+
+      <article>
+        <h1>I'm a great grandchild!</h1>
+      </article>
     </div>
 
+  </body>
+</html>
+
+
+<html>
+  <head>
+    <title>CSS 102 Challenge 2</title>
+  </head>
+  <body>
+    <!--DIRECTIONS: Use Flexbox to lay out the following images.-->
+    <div class= "turtle-container">
+
+      <div class= "turtle-item">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1268475/turtles-2323631_960_720.jpg" alt="" />
+      </div>
+
+      <div class= "turtle-item">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1268475/turtle-863336_960_720.jpg" alt="" />
+      </div>
+
+      <div class= "turtle-item">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1268475/3749300355_b8e99274f3_b.jpg" alt="" />
+      </div>
+
+      <div class= "turtle-item">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1268475/Hawksbill_Sea_Turtle_Carey_de_Concha_(5840602412).jpg" alt="" />
+      </div>
+
+      <div class= "turtle-item">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1268475/Green_turtle_in_Kona_2008.jpg" alt="" />
+      </div>
+
+    </div>
   </body>
 </html>
