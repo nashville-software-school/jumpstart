@@ -1,0 +1,231 @@
+<!--  ----------------------       MINI CHALLENGE 1      -------------------------  -->
+
+
+<!-- HTML -->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>jQuery 102 Mini Challenge 1</title>
+</head>
+
+<body>
+  <!-- This section contains frames available for sale. -->
+  <section id="section-products" class="page-section">
+    <h2>Frames for Sale</h2>
+    <div id="product-container">
+      <!-- Begin Product 1 -->
+      <div class="product" id="p1">
+        <div class="title">
+          <h2>Taco Suit</h2>
+        </div>
+        <div class="image">
+          <img src="https://s-media-cache-ak0.pinimg.com/originals/ef/8c/91/ef8c9139fae7f858e9459dce56342079.png" alt="Product: Taco Suit">
+        </div>
+        <div class="description">
+          <p>The dog smells bad then cats take over the world so i cry and cry and cry unless you pet me, and then maybe i cry just for fun.</p>
+          <h6>$25</h6>
+        </div>
+      </div>
+      <!-- End Product 1 -->
+      <!-- Begin Product 2 -->
+      <div class="product" id="p2">
+        <div class="title">
+          <h2>Neck Decoration</h2>
+        </div>
+        <div class="image">
+          <img src="http://img08.deviantart.net/4612/i/2014/250/5/7/vintage_frame_by_mistyt_stock-d7yb6b4.png" alt="Product: Neck Decoration">
+        </div>
+        <div class="description">
+          <p>Milk the cow head nudges . I just saw other cats inside the house and nobody ask me before using my litter box make muffins,</p>
+          <h6>$750</h6>
+        </div>
+      </div>
+      <!-- End Product 2 -->
+      <!-- Begin Product 3 -->
+      <div class="product" id="p3">
+        <div class="title">
+          <h2>Mop Attire</h2>
+        </div>
+        <div class="image">
+          <img src="https://s-media-cache-ak0.pinimg.com/736x/64/65/26/646526bf107de20db4650eb5c5aeb232--antique-photo-frames-vintage-frames.jpg"  alt="Product: Mop Attire ">
+            </div>
+            <div class="description ">
+              <p>Lick the plastic bag eat the fat cats food so cats making all the muffins rub face on owner</p>
+              <h6>$3050</h6>
+            </div>
+          </div>
+          <!-- End Product 3 -->
+      </div>
+    </section>
+
+    <!-- This section contains a form. -->
+    <section id="section-form " class="page-section ">
+      <form action=" ">
+          <legend>Login Form</legend>
+          <label for="name ">Name</label>
+          <input type="text " name="name " id="input-name">
+          <br>
+          <label for="email ">Email</label>
+          <input type="email " name="email " required id="input-email">
+          <br>
+          <label for="password ">Password</label>
+          <input type="password" name="password" id="input-password">
+          <br>
+          <input type="checkbox" id="subscribeToAlerts" name="subscribe" value="newsletter">
+          <label for="subscribeAlerts ">Subscribe for email alerts?</label>
+      </form>
+      <br>
+      <button type="button " id="form-button">Submit</button>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </body>
+</html>
+
+<!-- CSS -->
+
+
+img {
+  max-width: 50px;
+}
+
+#product-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.product {
+  position: relative;
+}
+
+.sold-out {
+  position: absolute;
+  top: 90px;
+}
+
+<!-- JS -->
+
+$(document).ready(function() {
+
+//1. Using jQuery, get all the titles of the products for sale and check whether the results include "Taco Suit" and "Burger Suit". If they do, log to console "Product exists!"
+
+
+//2. Using jQuery, when the form is submitted, get the values of all input fields and log to console. Log to console, whether the checkbox is checked or unchecked.
+
+})
+
+
+
+<!--  ----------------------       MINI CHALLENGE 2      -------------------------  -->
+
+
+<!-- HTML -->
+<html>
+  <head>
+    <title>jQuery 102 Mini Challenge 2</title>
+  </head>
+  <body>
+    <header id="page-header">
+    <h1 id="page-title">Event Listeners</h1>
+  </header>
+
+<h3 id ="toggle-header">The List of Unordered Items</h3>
+  <ul class="item-list">
+    <li>One meow</li>
+    <li>Two meows</li>
+    <li>Three meows</li>
+  </ul>
+
+<h3>The Content</h3>
+  <article class="main-article">
+    <p class="article-para">Meow meow hide at bottom of staircase to trip human slap owner's face at 5am until human fills food dish. Poop on grasses stare at ceiling, so eat grass, throw it back up dream about hunting birds sit on human spread kitty litter all over house. Sun bathe sleep in the bathroom sink or love and coo around boyfriend who purrs and makes the perfect moonlight eyes so i can purr and swat the glittery gleaming yarn to him (the yarn is from a $125 sweater) for and sometimes switches in french and say "miaou" just because well why not fall over dead (not really but gets sypathy) for cereal boxes make for five star accommodation , for eat from dog's food.</p>
+  </article>
+
+<h3>The Input</h3>
+  <input type="text" id="keypress-input">
+
+  <div id="output-target"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js">
+    </script>
+  </body>
+</html>
+
+
+
+<!-- JS -->
+
+$(document).ready(function() {
+
+//1. On page load, hide the unordered list with class "item-list".
+
+
+//2. When a user hovers over the h3 element with id "toggle-header", use the toggle jQuery method to show/hide the list with class "item-list".
+
+
+//3. Add a event listener to the input field with id "keypress-input" so that on keypress, the value in the input field is displayed in the div with id "output-target".
+
+//4. When the mouse moves anywhere on the article with class "main-article", log to the console "The mouse is moving!".
+
+})
+
+
+
+<!--  ----------------------       MINI CHALLENGE 3      -------------------------  -->
+
+
+<!-- HTML -->
+<html>
+
+<head>
+  <title>jQuery 102 Mini Challenge 3</title>
+</head>
+
+<body>
+  <div>
+    <p id="paragraph-one">Sniff sniff sit by the fire and chase imaginary bugs attack feet, and show belly relentlessly pursues moth. Have a lot of grump in yourself because you can't forget to be grumpy and not be like king grumpy cat lick sellotape pushes butt to face.</p>
+    <button type="button" id="btn-two-para">Click to Animate</button>
+  </div>
+  <br>
+  <div>
+    <img src="https://s-media-cache-ak0.pinimg.com/originals/9d/3e/5d/9d3e5d6d39926b75d11ad063404aa801.jpg" alt="painting one" id="painting-one">
+    <button type="button" id="btn-one-painting">Click to Animate</button>
+  </div>
+  <br>
+  <div>
+    <img src="https://i.pinimg.com/736x/d3/f2/93/d3f29317601a8c4d01f9341c9c654cf5--vintage-cat-animal-paintings.jpg" alt="painting two" id="painting-two">
+    <button type="button" id="btn-two-painting">Click to Animate</button>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+
+</html>
+
+<!-- CSS -->
+
+
+img {
+  width: 100px;
+}
+
+p {
+  border: 1px dashed gray;
+}
+
+
+<!-- JS -->
+
+$(document).ready(function() {
+
+//1. When the button with id "btn-two-para" is clicked, animate the paragraph with id "paragraph-one" so that the font size changes to 5em and there is a padding of 25px.
+
+
+//2. When the button with id "btn-one-painting" is clicked, animate the image with id "painting-one" so that the opacity becomes 0.5 and the width increases by 100px.
+
+//3. When the button with id "btn-two-painting" is clicked, animate the image with id "painting-two" so that the image fades out over 1000 milliseconds and then fades in at a "slow" speed.
+
+})
