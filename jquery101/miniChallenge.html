@@ -1,0 +1,160 @@
+<!--  ----------------------       MINI CHALLENGE 1      -------------------------  -->
+
+
+<!-- HTML -->
+<html>
+  <head>
+    <title>jQuery Mini Challenge 1</title>
+  </head>
+  <body>
+    <header>
+      <h1 id ="main-heading">Introducing jQuery</h1>
+    </header>
+    <section class = "first-section">
+      <h3>What is jQuery?</h3>
+      <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+    </section>
+    <section class = "second-section">
+      <h3>Why jQuery?</h3>
+      <ul>
+        <li class="list-item">Lightweight Footprint</li>
+        <li class="list-item">CSS3 Compliant</li>
+        <li class="list-item">Cross-Browser</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Source: <a href="https://jquery.com/">www.jquery.com</a></p>
+    </footer>
+  </body>
+</html>
+
+
+<!-- JS -->
+
+//Use jQuery by including a script tag in your html and using this as your CDN source: "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+
+//Make sure the page had loaded and is ready to be manipulated:
+
+  //1. Select the element with id "main-heading" and log it's text to console.
+
+  //2. Select the element with class "first-section" and log it's text to console.
+
+//3. Select elements with the html tag h3 and log it's text to console.
+
+
+//4. Select the second item in the list(using the class "list-item") and log it's text to console.
+
+
+<!--  ----------------------       MINI CHALLENGE 2      -------------------------  -->
+
+
+<!-- HTML -->
+<html>
+
+<head>
+  <title>jQuery Mini Challenge 2</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="main-heading">jQuery Methods</h1>
+  </header>
+  <section class="first-section">
+    <p id="para-one">All of the methods in this section manipulate the DOM in some manner. A few of them simply change one of the attributes of an element (also listed in the Attributes category), while others set an element's style properties (also listed in the CSS
+      category). Still others modify entire elements (or groups of elements) themselves—inserting, copying, removing, and so on. All of these methods are referred to as "setters," as they change the values of properties. A few of these methods—such as
+      .attr(), .html(), and .val()—also act as "getters," retrieving information from DOM elements for later use.</p>
+    <p id="para-two">
+      How much do you love jQuery?
+    </p>
+    <div>
+      <h3 class= "sub-heading">Here are some examples:</h3>
+      <ul>
+        <li>.addClass()</li>
+        <li>.children()</li>
+        <li>.parents()</li>
+        <li>.text() </li>
+        <li>.html()</li>
+        <li>.append()</li>
+      </ul>
+    </div>
+    <div id="replace-html">
+      <h3 class ="replace-h3">Text to be replaced...</h3>
+    </div>
+  </section>
+  <footer>
+    <p>Source: <a href="https://jquery.com/">www.jquery.com</a></p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+
+</html>
+
+
+<!-- JS -->
+
+$(document).ready(function() {
+
+//1. Select the ul element and add the class "my-list" to them.
+
+//2. Select the children of the div, specifically the h3 element and log to console it's text.
+
+//3. Select the children of the section, specifically the paragraph with the id "para-two" and append the following text to it: "I eat, sleep and breathe it. That's how much I love jQuery."
+
+//4. Select the element with class "replace-h3", target it's parent div with id "replace-html" and replace the h3 with a paragraph with the following text: "My brand new paragraph that I added to the DOM using jQuery!"
+
+})
+
+
+<!--  ----------------------       MINI CHALLENGE 3      -------------------------  -->
+
+
+<!-- HTML -->
+<html>
+  <head>
+    <title>jQuery Mini Challenge 3</title>
+  </head>
+  <body>
+    <header>
+      <h1>jQuery Click Events</h1>
+    </header>
+    <section>
+      <article>
+        <h3>.val()</h3>
+        <p>The .val() method is primarily used to get the values of form elements such as input, select and textarea. When called on an empty collection, it returns undefined.</p>
+      </article>
+      <article>
+        <h3>.click()</h3>
+        <p>The click event is sent to an element when the mouse pointer is over the element, and the mouse button is pressed and released. Any HTML element can receive this event.</p>
+      </article>
+    </section>
+    <section>
+      <h3>Login Form</h3>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="email" id="emailField">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="passwordField">
+        <br>
+        <button type="button" id="submit-button">Submit</button>
+      </form>
+      <br>
+
+    </section>
+    <footer>
+      <p>Source: <a href="https://jquery.com/">www.jquery.com</a></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </body>
+</html>
+
+<!-- JS -->
+
+$(document).ready(function() {
+
+  //1. Add a .click() event handler to the submit button using its id "submit-button" so that when the button is clicked, log to the console "Submit button was clicked"
+
+//2. In the event handler function, get the values the user enters in the email and password fields in the form so that when the submit button is clicked, log to console, the values from the input fields in the form.
+
+})
